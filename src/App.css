@@ -1,0 +1,8 @@
+body {
+    --color: #993333
+}
+
+.app__body {
+    display: flex;
+    height: 100vh;
+}
