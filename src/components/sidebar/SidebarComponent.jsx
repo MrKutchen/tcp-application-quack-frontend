@@ -62,8 +62,9 @@ class SidebarComponent extends Component {
                 <SideBarOptions Icon={ExpandMoreIcon} title="Channels"/>
                 <hr/>
                 <SideBarOptions Icon={AddIcon} addChannelOption title="Add Channel"/>
+
                 {this.state.channels.map(channel => (
-                    <SideBarOptions title = {channel.channelName} />
+                    <SideBarOptions title = {channel.channelName} id = {channel.id}/>
                     ))}
             </div>
         );

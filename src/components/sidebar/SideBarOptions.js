@@ -1,6 +1,6 @@
 import React from 'react';
 import "./SidebarOptions.css"
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 function SideBarOptions({Icon, title, id, addChannelOption}) {
 
@@ -17,13 +17,14 @@ function SideBarOptions({Icon, title, id, addChannelOption}) {
     };
 
     const addChannel = () => {
-
+        const channelName = prompt('Please enter the channel name');
     }
 
 
     return (
         <div className="sidebarOption"
-             onClick={addChannelOption ? addChannel : selectChannel}
+             onClick={addChannel}
+             onClick={selectChannel}
         >
             {Icon && <Icon className="sidebarOption__icon"/>}
             {Icon ? (<h3>{title}</h3>
