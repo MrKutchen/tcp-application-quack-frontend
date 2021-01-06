@@ -1,9 +1,14 @@
 import axios from "axios";
+import {API_URL} from "../Constants";
 
 class ChannelDataService {
 
     retrieveAllChannels() {
-        return axios.get('http://localhost:3000/channels')
+        return axios.get(`${API_URL}/channels`)
+    }
+
+    retrieveChannel(id) {
+        return axios.get(`${API_URL}/channels/${id}`)
     }
 }
 

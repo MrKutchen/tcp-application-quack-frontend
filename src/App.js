@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './App.css';
-import Header from "./components/header/Header.js";
-import Sidebar from "./components/sidebar/Sidebar.js";
+import HeaderComponent from "./components/header/HeaderComponent.jsx";
+import SidebarComponent from "./components/sidebar/SidebarComponent.jsx";
 import Chat from "./components/chat/Chat.js";
 
 class App extends Component {
@@ -11,9 +11,9 @@ class App extends Component {
             //BEM naming convention
             <div className="app">
                 <Router>
-                    <Header/>
+                    <HeaderComponent/>
                     <div className="app__body">
-                        <Sidebar/>
+                        <SidebarComponent/>
                         <Switch>
                             <Route path="/channels/:id">
                                 <Chat/>

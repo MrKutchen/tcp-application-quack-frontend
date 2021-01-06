@@ -4,7 +4,6 @@
     background-color: var(--color);
     border-top: 1px solid #732626;
     max-width: 260px;
-    flex:0.3;
 }
 
 .sidebar > hr {
